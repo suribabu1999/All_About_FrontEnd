@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Position in Html</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <style>
+            .parent{
+                height: 500px;
+                width: 500px;
+                background-color: aqua;
+                position: relative;
+            }
+            .child:nth-child(1){
+                background-color:rgb(181, 240, 32);
+            }
+            .child:nth-child(2){
+                background-color:rgb(235, 106, 14);
+                top: 100px;
+                left: 100px;
+                
+            }
+            
+            .child:nth-child(3){
+                background-color:rgb(186, 244, 39);
+                top: 200px;
+                left: 200px;
+                
+            }
+            
+            .child:nth-child(4){
+                background-color:rgb(201, 43, 161);
+                top: 300px;
+                left: 300px;
+                
+            }
+            
+            .child:nth-child(5){
+                background-color:rgb(68, 168, 231);
+                top: 400px;
+                left: 400px;
+               
+            }
+            .parent > div {
+                width: 100px;
+                height: 100px;
+                position: absolute;  
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+       <div class="parent">
+         <div class="child">1</div>
+         <div class="child">2</div>
+         <div class="child">3</div>
+         <div class="child">4</div>
+         <div class="child">5</div>
+
+       </div>
+        
+    </body>
+</html>
