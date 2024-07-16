@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Elements Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Inline Elements</h1>
+        <p>Inline elements are those that do not start on a new line and only take up as much width as necessary. Here are examples of various inline elements:</p>
+        
+        <h2><code>&lt;a&gt;</code> - Anchor</h2>
+        <p>The <code>&lt;a&gt;</code> element is used to create hyperlinks. For example, visit <a href="https://www.example.com">this website</a>.</p>
+        
+        <h2><code>&lt;abbr&gt;</code> - Abbreviation</h2>
+        <p>The <code>&lt;abbr&gt;</code> element represents an abbreviation. For example, <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
+        
+        <h2><code>&lt;acronym&gt;</code> - Acronym (Deprecated)</h2>
+        <p>The <code>&lt;acronym&gt;</code> element is used for acronyms but is deprecated in HTML5. Instead, use <code>&lt;abbr&gt;</code>. For example, <abbr title="National Aeronautics and Space Administration">NASA</abbr>.</p>
+        
+        <h2><code>&lt;b&gt;</code> - Bold</h2>
+        <p>The <code>&lt;b&gt;</code> element is used to draw attention to text without conveying extra importance. For example, this text is <b>bold</b>.</p>
+        
+        <h2><code>&lt;bdi&gt;</code> - Bidirectional Isolation</h2>
+        <p>The <code>&lt;bdi&gt;</code> element is used to isolate a span of text that might be formatted in a different direction from other text. For example, <bdi>مرحبا</bdi> in a paragraph.</p>
+        
+        <h2><code>&lt;bdo&gt;</code> - Bidirectional Override</h2>
+        <p>The <code>&lt;bdo&gt;</code> element is used to override the current text direction. For example, <bdo dir="rtl">This text is right-to-left.</bdo></p>
+        
+        <h2><code>&lt;br&gt;</code> - Line Break</h2>
+        <p>The <code>&lt;br&gt;</code> element produces a line break in text. For example, here is some text<br>with a line break.</p>
+        
+        <h2><code>&lt;cite&gt;</code> - Citation</h2>
+        <p>The <code>&lt;cite&gt;</code> element is used to reference a creative work. For example, <cite>Shakespeare</cite>.</p>
+        
+        <h2><code>&lt;code&gt;</code> - Inline Code</h2>
+        <p>The <code>&lt;code&gt;</code> element is used to display code snippets. For example, <code>&lt;div&gt;</code> is a block element.</p>
+        
+        <h2><code>&lt;del&gt;</code> - Deleted Text</h2>
+        <p>The <code>&lt;del&gt;</code> element represents text that has been deleted. For example, <del>This text is deleted.</del></p>
+        
+        <h2><code>&lt;dfn&gt;</code> - Definition</h2>
+        <p>The <code>&lt;dfn&gt;</code> element represents the defining instance of a term. For example, <dfn>HTML</dfn> stands for Hypertext Markup Language.</p>
+        
+        <h2><code>&lt;em&gt;</code> - Emphasized Text</h2>
+        <p>The <code>&lt;em&gt;</code> element emphasizes text. For example, this is <em>important</em>.</p>
+        
+        <h2><code>&lt;i&gt;</code> - Italic Text</h2>
+        <p>The <code>&lt;i&gt;</code> element is used to display text in italics. For example, this text is <i>italic</i>.</p>
+        
+        <h2><code>&lt;img&gt;</code> - Image</h2>
+        <p>The <code>&lt;img&gt;</code> element embeds an image in the document. For example, <img src="https://via.placeholder.com/50" alt="Placeholder Image">.</p>
+        
+        <h2><code>&lt;ins&gt;</code> - Inserted Text</h2>
+        <p>The <code>&lt;ins&gt;</code> element represents text that has been inserted. For example, <ins>This text is inserted.</ins></p>
+        
+        <h2><code>&lt;kbd&gt;</code> - Keyboard Input</h2>
+        <p>The <code>&lt;kbd&gt;</code> element represents user input via a keyboard. For example, press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+        
+        <h2><code>&lt;label&gt;</code> - Label</h2>
+        <p>The <code>&lt;label&gt;</code> element is used to label an <code>&lt;input&gt;</code> element. For example, <label for="name">Name:</label> <input type="text" id="name" name="name"></p>
+        
+        <h2><code>&lt;mark&gt;</code> - Marked Text</h2>
+        <p>The <code>&lt;mark&gt;</code> element represents highlighted text. For example, <mark>this text is highlighted</mark>.</p>
+        
+        <h2><code>&lt;q&gt;</code> - Inline Quotation</h2>
+        <p>The <code>&lt;q&gt;</code> element represents a short inline quotation. For example, <q>This is a quote.</q></p>
+        
+        <h2><code>&lt;s&gt;</code> - Strikethrough Text</h2>
+        <p>The <code>&lt;s&gt;</code> element represents text that is no longer accurate or relevant. For example, <s>This text is no longer relevant.</s></p>
+        
+        <h2><code>&lt;samp&gt;</code> - Sample Output</h2>
+        <p>The <code>&lt;samp&gt;</code> element represents sample output from a computer program. For example, <samp>Error: File not found.</samp></p>
+        
+        <h2><code>&lt;small&gt;</code> - Small Text</h2>
+        <p>The <code>&lt;small&gt;</code> element represents side comments and small print. For example, <small>This is small text.</small></p>
+        
+        <h2><code>&lt;span&gt;</code> - Generic Inline Container</h2>
+        <p>The <code>&lt;span&gt;</code> element is a generic inline container for phrasing content. For example, <span style="color: blue;">this text is blue</span>.</p>
+        
+        <h2><code>&lt;strong&gt;</code> - Strong Emphasis</h2>
+        <p>The <code>&lt;strong&gt;</code> element represents strong importance. For example, this is <strong>very important</strong>.</p>
+        
+        <h2><code>&lt;sub&gt;</code> - Subscript Text</h2>
+        <p>The <code>&lt;sub&gt;</code> element represents subscript text. For example, H<sub>2</sub>O.</p>
+        
+        <h2><code>&lt;sup&gt;</code> - Superscript Text</h2>
+        <p>The <code>&lt;sup&gt;</code> element represents superscript text. For example, E=mc<sup>2</sup>.</p>
+        
+        <h2><code>&lt;time&gt;</code> - Time</h2>
+        <p>The <code>&lt;time&gt;</code> element represents a specific period in time. For example, <time datetime="2024-07-16">July 16, 2024</time>.</p>
+        
+        <h2><code>&lt;u&gt;</code> - Underlined Text</h2>
+        <p>The <code>&lt;u&gt;</code> element represents underlined text. For example, <u>this text is underlined</u>.</p>
+        
+        <h2><code>&lt;var&gt;</code> - Variable</h2>
+        <p>The <code>&lt;var&gt;</code> element represents a variable in programming or mathematical expressions. For example, <var>x</var> + <var>y</var> = 10.</p>
+        
+    </div>
+</body>
+</html>

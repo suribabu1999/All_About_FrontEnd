@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Elements Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 1.5em;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Understanding Block Elements</h1>
+        <p>Block elements are those that start on a new line and take up the full width available. Here are examples of
+            various block elements:</p>
+
+        <h2><code>&lt;div&gt;</code> - Division</h2>
+        <p>The <code>&lt;div&gt;</code> element is a generic container for other elements. It does not inherently
+            represent anything.</p>
+        <pre><code>&lt;div&gt;This is a division element.&lt;/div&gt;</code></pre>
+
+        <h2><code>&lt;p&gt;</code> - Paragraph</h2>
+        <p>The <code>&lt;p&gt;</code> element represents a paragraph of text.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+        <h2><code>&lt;h1&gt; to &lt;h6&gt;</code> - Headings</h2>
+        <p>The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> elements represent six levels of section headings,
+            <code>&lt;h1&gt;</code> being the highest (or most important) level and <code>&lt;h6&gt;</code> the lowest.
+        </p>
+        <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+
+        <h2><code>&lt;ul&gt;</code> - Unordered List</h2>
+        <p>The <code>&lt;ul&gt;</code> element represents an unordered list of items, typically rendered as a bulleted
+            list.</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h2><code>&lt;ol&gt;</code> - Ordered List</h2>
+        <p>The <code>&lt;ol&gt;</code> element represents an ordered list of items, typically rendered as a numbered
+            list.</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+        <h2><code>&lt;li&gt;</code> - List Item</h2>
+        <p>The <code>&lt;li&gt;</code> element represents an item in a list. It must be contained in a parent element:
+            an ordered list (<code>&lt;ol&gt;</code>), an unordered list (<code>&lt;ul&gt;</code>), or a menu
+            (<code>&lt;menu&gt;</code>).</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+        <h2><code>&lt;blockquote&gt;</code> - Block Quotation</h2>
+        <p>The <code>&lt;blockquote&gt;</code> element represents a section that is quoted from another source.</p>
+        <pre><code>&lt;blockquote&gt;
+    This is a block quotation.
+&lt;/blockquote&gt;</code></pre>
+
+        <h2><code>&lt;pre&gt;</code> - Preformatted Text</h2>
+        <p>The <code>&lt;pre&gt;</code> element represents preformatted text, which is typically displayed in a
+            fixed-width font. Whitespace inside this element is displayed as it is, and line breaks are preserved.</p>
+        <pre><code>&lt;pre&gt;
+This is preformatted text.
+    It respects whitespace and line breaks.
+&lt;/pre&gt;</code></pre>
+
+        <h2><code>&lt;figure&gt;</code> - Figure</h2>
+        <p>The <code>&lt;figure&gt;</code> element represents self-contained content, like illustrations, diagrams,
+            photos, code listings, etc., that is typically referenced in the main text.</p>
+        <pre><code>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="An example image"&gt;
+    &lt;figcaption&gt;This is an image caption.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <h2><code>&lt;figcaption&gt;</code> - Figure Caption</h2>
+        <p>The <code>&lt;figcaption&gt;</code> element represents a caption or legend for a figure
+            (<code>&lt;figure&gt;</code> element).</p>
+        <pre><code>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="An example image"&gt;
+    &lt;figcaption&gt;This is an image caption.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+        <h2><code>&lt;hr&gt;</code> - Horizontal Rule</h2>
+        <p>The <code>&lt;hr&gt;</code> element represents a thematic break between paragraph-level elements (e.g., a
+            change of scene in a story, or a shift of topic within a section).</p>
+        <pre><code>&lt;hr&gt;</code></pre>
+
+        <h2><code>&lt;address&gt;</code> - Address</h2>
+        <p>The <code>&lt;address&gt;</code> element represents contact information for its nearest
+            <code>&lt;article&gt;</code> or <code>&lt;body&gt;</code> element ancestor.</p>
+        <pre><code>&lt;address&gt;
+    1234 Street Name&lt;br&gt;
+    City, State, ZIP Code
+&lt;/address&gt;</code></pre>
+
+        <h2><code>&lt;article&gt;</code> - Article</h2>
+        <p>The <code>&lt;article&gt;</code> element represents a self-contained composition in a document, page,
+            application, or site, which is intended to be independently distributable or reusable (e.g., in
+            syndication).</p>
+        <pre><code>&lt;article&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;p&gt;This is an article.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+        <h2><code>&lt;section&gt;</code> - Section</h2>
+        <p>The <code>&lt;section&gt;</code> element represents a standalone section of content which doesn't have a more
+            specific semantic element to represent it.</p>
+        <pre><code>&lt;section&gt;
+    &lt;h2&gt;Section Title&lt;/h2&gt;
+    &lt;p&gt;This is a section.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+
+        <h2><code>&lt;nav&gt;</code> - Navigation</h2>
+        <p>The <code>&lt;nav&gt;</code> element represents a section of a page whose purpose is to provide navigation
+            links, either within the current document or to other documents.</p>
+        <pre><code>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+        <h2><code>&lt;aside&gt;</code> - Aside</h2>
+        <p>The <code>&lt;aside&gt;</code> element represents a portion of a document whose content is only indirectly
+            related to the document's main content.</p>
+        <pre><code>&lt;aside&gt;
+    &lt;p&gt;This is an aside.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+
+        <h2><code>&lt;header&gt;</code> - Header</h2>
+        <p>The <code>&lt;header&gt;</code> element represents introductory content, typically a group of introductory or
+            navigational aids.</p>
+        <pre><code>&lt;header&gt;
+    &lt;h1&gt;Header Title&lt;/h1&gt;
+    &lt;p&gt;This is the header section.&lt;/p&gt;
+&lt;/header&gt;</code></pre>
+
+        <h2><code>&lt;footer&gt;</code> - Footer</h2>
+        <p>The <code>&lt;footer&gt;</code> element represents a footer for its nearest sectioning content or sectioning
+            root element.</p>
+        <pre><code>&lt;footer&gt;
+    &lt;p&gt;This is the footer section.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+        <h2><code>&lt;main&gt;</code> - Main Content</h2>
+        <p>The <code>&lt;main&gt;</code> element represents the dominant content of the <code>&lt;body&gt;</code> of a
+            document.</p>
+        <pre><code>&lt;main&gt;
+    &lt;h1&gt;Main Content Title&lt;/h1&gt;
+    &lt;p&gt;This is the main content.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
+
+        <h2><code>&lt;details&gt;</code> - Details</h2>
+        <p>The <code>&lt;details&gt;</code> element represents a disclosure widget from which the user can obtain
+            additional information or controls.</p>
+        <pre><code>&lt;details&gt;
+    &lt;summary&gt;More info&lt;/summary&gt;
+    &lt;p&gt;This is additional information.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+        <h2><code>&lt;summary&gt;</code> - Summary</h2>
+        <p>The <code>&lt;summary&gt;</code> element represents a summary, caption, or legend for a
+            <code>&lt;details&gt;</code> element's disclosure box.</p>
+        <pre><code>&lt;details&gt;
+    &lt;summary&gt;More info&lt;/summary&gt;
+    &lt;p&gt;This is additional information.&lt;/p&gt;
+&lt;/details&gt;</code></pre>
+
+    </div>
+</body>
+
+</html>
